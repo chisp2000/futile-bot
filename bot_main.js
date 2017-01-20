@@ -30,10 +30,22 @@ Chaika.on("message", msg => {
   if(msg.content.startsWith(prefix)) return;
   //event handler:
   if(msg.author.bot) return;
-
+  
     else if (msg.content.startsWith(prefix + "help")) {
-      msg.channel.sendMessage(helpdesk);
-    }
+      msg.reply("**Help** \n\
+                *prefix commands* \n\
+                -!smell: Smelle d lett! \n\
+                -!noah: noah smell lett. \n\
+                -!nek: nek. \n\
+                
+                *ping and respond* \n\
+                ping: responds ping \n\
+                foo: responds bar \n\
+                lett: responds lett \n\
+                ching: responds chong \n\
+                noah: responds insult \n\ 
+                
+                ");
 
     else if (msg.content.startsWith(prefix + "smell")) {
       msg.reply("Smelle d lett!");
