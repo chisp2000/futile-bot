@@ -91,4 +91,7 @@ Chaika.on("message", msg => {
   else if (msg.content.startsWith("!" || len("!") > 4)) {
     msg.channel.sendMessage("https://a.cocaine.ninja/gdqran.png");
   }
+  
+  else if (msg.content.match(/nightcore/i)) {
+    msg.channel.sendMessage("Alle som besøke nightcore fags e søppel og hele gruppa burde brennes og resirkulert");
 })
