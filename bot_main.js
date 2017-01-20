@@ -93,5 +93,5 @@ Chaika.on("message", msg => {
   }
   
   else if (msg.content.match(/nightcore/i)) {
-    msg.channel.sendMessage("Alle som besøke nightcore fags e søppel og hele gruppa burde brennes og resirkulert");
+    msg.channel.sendMessage("Alle som besøke nightcore fags e søppel og hele gruppa burde brennes og bli resirkulert");
 })
