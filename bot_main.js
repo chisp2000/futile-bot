@@ -43,9 +43,7 @@ Chaika.on("message", msg => {
                 foo: responds bar \n\
                 lett: responds lett \n\
                 ching: responds chong \n\
-                noah: responds insult \n\ 
-                \
-                ");
+                noah: responds insult \n\ ");
 
     else if (msg.content.startsWith(prefix + "smell")) {
       msg.reply("Smelle d lett!");
