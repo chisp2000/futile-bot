@@ -22,8 +22,7 @@ Chaika.on('ready', () => {
 
 //Helpdesk (må fikse)
 Chaika.on("message", msg => {
-  var helpdesk = "orka ikke å ksrive";
-
+ 
 //Prefix commands
   let prefix = "-!";
 
