@@ -32,10 +32,10 @@ Chaika.on("message", msg => {
 
     else if (msg.content.startsWith(prefix + "help")) {
       msg.reply("**Help** \n\
-                *prefix commands* \n\
-                -!smell: Smelle d lett! \n\
-                -!noah: noah smell lett. \n\
-                -!nek: nek. \n\
+                prefix commands* \n\
+                '/!smell': Smelle d lett! \n\
+                '/!noah': noah smell lett. \n\
+                '/!nek': nek. \n\
                 \
                 *ping and respond* \n\
                 ping: responds ping \n\
