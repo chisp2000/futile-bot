@@ -11,7 +11,7 @@
 var Discord = require("discord.js");
 var Chaika = new Discord.Client();
 
-Chaika.login("MjcwMTcwMzA2NjI1MTQyNzg0.C1z_Og.vKb5ZqzWmQh03kSO2FNCiyTkGic");
+Chaika.login("MjcwMTcwMzA2NjI1MTQyNzg0.C2T_Pg.wzRL5r2JuN0OwLZUo20efCLbYRA");
   //Client ID: 270170306625142784
   // Client ID link: https://discordapp.com/oauth2/authorize?&client_id=YYY&scope=bot
 
@@ -22,7 +22,6 @@ Chaika.on('ready', () => {
 
 //Helpdesk (må fikse)
 Chaika.on("message", msg => {
-  var helpdesk = "orka ikke å ksrive";
 
 //Prefix commands
   let prefix = "-!";
@@ -32,7 +31,18 @@ Chaika.on("message", msg => {
   if(msg.author.bot) return;
 
     else if (msg.content.startsWith(prefix + "help")) {
-      msg.channel.sendMessage(helpdesk);
+      msg.reply("**Help** \n\
+                *prefix commands* \n\
+                -!smell: Smelle d lett! \n\
+                -!noah: noah smell lett. \n\
+                -!nek: nek. \n\
+                \
+                *ping and respond* \n\
+                ping: responds ping \n\
+                foo: responds bar \n\
+                lett: responds lett \n\
+                ching: responds chong \n\
+                noah: responds insult \n\ ");
     }
 
     else if (msg.content.startsWith(prefix + "smell")) {
@@ -81,5 +91,9 @@ Chaika.on("message", msg => {
   }
   else if (msg.content.startsWith("!" || len("!") > 4)) {
     msg.channel.sendMessage("https://a.cocaine.ninja/gdqran.png");
+  }
+
+  else if (msg.content.match(/nightcore/i)) {
+    msg.channel.sendMessage("Alle som besøke nightcore fags e søppel og hele gruppa burde brennes og bli resirkulert");
   }
 })
