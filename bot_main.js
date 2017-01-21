@@ -11,7 +11,7 @@
 var Discord = require("discord.js");
 var Chaika = new Discord.Client();
 
-Chaika.login("MjcwMTcwMzA2NjI1MTQyNzg0.C2T_Pg.wzRL5r2JuN0OwLZUo20efCLbYRA");
+Chaika.login("xxx");
   //Client ID: xxx
   // Client ID link: https://discordapp.com/oauth2/authorize?&client_id=YYY&scope=bot
 
