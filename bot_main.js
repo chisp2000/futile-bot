@@ -11,7 +11,7 @@
 var Discord = require("discord.js");
 var Chaika = new Discord.Client();
 
-Chaika.login("xxx");
+Chaika.login("MjcwMTcwMzA2NjI1MTQyNzg0.C2T_Pg.wzRL5r2JuN0OwLZUo20efCLbYRA");
   //Client ID: xxx
   // Client ID link: https://discordapp.com/oauth2/authorize?&client_id=YYY&scope=bot
 
@@ -26,7 +26,7 @@ Chaika.on("message", msg => {
 //Prefix commands
   let prefix = "-!";
 
-  if(msg.content.startsWith(prefix)) return;
+  if(!msg.content.startsWith(prefix)) return;
   //event handler:
   if(msg.author.bot) return;
 
@@ -93,7 +93,7 @@ Chaika.on("message", msg => {
     msg.channel.sendMessage("https://a.cocaine.ninja/gdqran.png");
   }
 
-  else if (msg.content.match(/nightcore/i)) {
-    msg.channel.sendMessage("Alle som besøke nightcore fags e søppel og hele gruppa burde brennes og bli resirkulert");
+  else if (msg.content.match(/nightcore fags/i)) {
+    msg.channel.sendMessage("Alle som besøke nightcore-fags e søppel og hele gruppa burde brennes og bli resirkulert");
   }
 })
