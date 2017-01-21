@@ -24,7 +24,7 @@ Chaika.on('ready', () => {
 Chaika.on("message", msg => {
 
 //Prefix commands
-  let prefix = "-!";
+  let prefix = "/!";
 
   if(!msg.content.startsWith(prefix)) return;
   //event handler:
