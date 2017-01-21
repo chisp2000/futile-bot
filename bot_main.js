@@ -11,8 +11,8 @@
 var Discord = require("discord.js");
 var Chaika = new Discord.Client();
 
-Chaika.login("MjcwMTcwMzA2NjI1MTQyNzg0.C2T_Pg.wzRL5r2JuN0OwLZUo20efCLbYRA");
-  //Client ID: 270170306625142784
+Chaika.login("xxx");
+  //Client ID: xxx
   // Client ID link: https://discordapp.com/oauth2/authorize?&client_id=YYY&scope=bot
 
 Chaika.on('ready', () => {
@@ -22,18 +22,14 @@ Chaika.on('ready', () => {
 
 //Helpdesk (må fikse)
 Chaika.on("message", msg => {
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> a60a7ece7a706394624f50f54b8507c62aa6f0f9
 //Prefix commands
   let prefix = "-!";
 
   if(msg.content.startsWith(prefix)) return;
   //event handler:
   if(msg.author.bot) return;
-  
+
     else if (msg.content.startsWith(prefix + "help")) {
       msg.reply("**Help** \n\
                 *prefix commands* \n\
@@ -47,10 +43,7 @@ Chaika.on("message", msg => {
                 lett: responds lett \n\
                 ching: responds chong \n\
                 noah: responds insult \n\ ");
-<<<<<<< HEAD
     }
-=======
->>>>>>> a60a7ece7a706394624f50f54b8507c62aa6f0f9
 
     else if (msg.content.startsWith(prefix + "smell")) {
       msg.reply("Smelle d lett!");
@@ -99,14 +92,8 @@ Chaika.on("message", msg => {
   else if (msg.content.startsWith("!" || len("!") > 4)) {
     msg.channel.sendMessage("https://a.cocaine.ninja/gdqran.png");
   }
-<<<<<<< HEAD
 
   else if (msg.content.match(/nightcore/i)) {
     msg.channel.sendMessage("Alle som besøke nightcore fags e søppel og hele gruppa burde brennes og bli resirkulert");
   }
-=======
-  
-  else if (msg.content.match(/nightcore/i)) {
-    msg.channel.sendMessage("Alle som besøke nightcore fags e søppel og hele gruppa burde brennes og bli resirkulert");
->>>>>>> a60a7ece7a706394624f50f54b8507c62aa6f0f9
 })
