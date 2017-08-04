@@ -17,3 +17,8 @@ Escape is futile.
  * Pulling images from NSFW/SFW websites.
  * Posting youtube results based on parameters.
 
+
+
+### Dependencies
+
+[Discord.js](https://github.com/hydrabolt/discord.js/)
