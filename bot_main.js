@@ -1,27 +1,28 @@
-
-//  ______  __    __       ___       __   __  ___      ___         .______     ______   .___________.    ____     ___     ___     ___    __   __   __   __
-// /      ||  |  |  |     /   \     |  | |  |/  /     /   \        |   _  \   /  __  \  |           |   |___ \   / _ \   / _ \   / _ \  |  | |  | |  | |  |
-//|  ,----'|  |__|  |    /  ^  \    |  | |  '  /     /  ^  \       |  |_)  | |  |  |  | `---|  |----`     __) | | | | | | | | | | | | | |  | |  | |  | |  |
-//|  |     |   __   |   /  /_\  \   |  | |    <     /  /_\  \      |   _  <  |  |  |  |     |  |         |__ <  | | | | | | | | | | | | |  | |  | |  | |  |
-//|  `----.|  |  |  |  /  _____  \  |  | |  .  \   /  _____  \     |  |_)  | |  `--'  |     |  |         ___) | | |_| | | |_| | | |_| | |__| |__| |__| |__|
-// \______||__|  |__| /__/     \__\ |__| |__|\__\ /__/     \__\    |______/   \______/      |__|        |____/   \___/   \___/   \___/  (__) (__) (__) (__)
-
+//          (
+//          )\ )          )     (           (           )
+//         (()/(   (   ( /( (   )\   (    ( )\       ( /(
+//       (_)) ))\  )\()))\ ((_) ))\   )((_)  (   )\())
+//       (_))_|/((_)(_))/((_) _  /((_) ((_)_   )\ (_))/
+//       | |_ (_))( | |_  (_)| |(_))    | _ ) ((_)| |_
+//       | __|| || ||  _| | || |/ -_)   | _ \/ _ \|  _|
+//       |_|   \_,_| \__| |_||_|\___|   |___/\___/ \__|
 
 
 var Discord = require("discord.js");
-var Chaika = new Discord.Client();
+var Futile = new Discord.Client();
 
-Chaika.login("xxx");
+
+Futile.login("xxx");
   //Client ID: xxx
   // Client ID link: https://discordapp.com/oauth2/authorize?&client_id=YYY&scope=bot
 
-Chaika.on('ready', () => {
-  console.log('Chaika-bot is ready!!');
+Futile.on('ready', () => {
+  console.log('Futile-bot is ready');
 });
 
 
 //Helpdesk (må fikse)
-Chaika.on("message", msg => {
+Futile.on("message", msg => {
 
 //Prefix commands
   let prefix = "/!";
@@ -30,27 +31,13 @@ Chaika.on("message", msg => {
   //event handler:
   if(msg.author.bot) return;
 
-    else if (msg.content.startsWith(prefix + "help")) {
-      msg.reply("**Help** \n\
-                prefix commands* \n\
-                '/!smell': Smelle d lett! \n\
-                '/!noah': noah smell lett. \n\
-                '/!nek': nek. \n\
-                \
-                *ping and respond* \n\
-                ping: responds ping \n\
-                foo: responds bar \n\
-                lett: responds lett \n\
-                ching: responds chong \n\
-                noah: responds insult \n\ ");
+
+    else if (msg.content.startsWith(prefix + "auditor")) {
+      msg.reply("I'm listening to your every move. http://youarelistening.to/newyork ");
     }
 
-    else if (msg.content.startsWith(prefix + "smell")) {
-      msg.reply("Smelle d lett!");
-    }
-
-    else if (msg.content.startsWith(prefix + "noah")) {
-      msg.channel.sendMessage("Hei jeg heter noah og jeg liker å krige mot HRE fordi Milan stronk!");
+    else if (msg.content.startsWith(prefix + "duckquery")) {
+      msg.channel.sendMessage("kvassy, add duckquery");
     }
 
     else if (msg.content.startsWith(prefix + "nek")) {
@@ -59,14 +46,14 @@ Chaika.on("message", msg => {
 });
 
 //AI Commands.
-Chaika.on("message", msg => {
-  if (msg.isMentioned(Chaika.user)) {
-    msg.reply("Hi! I am Chaika bot!")
+Futile.on("message", msg => {
+  if (msg.isMentioned(Futile.user)) {
+    msg.reply("Hi, I'm Futile bot!")
   }
 })
 
 //Ping-and-respond commands.
-Chaika.on("message", msg => {
+Futile.on("message", msg => {
 
   if (msg.content.match(/ping/i)) {
       msg.channel.sendMessage("pong!");
@@ -76,8 +63,8 @@ Chaika.on("message", msg => {
     msg.channel.sendMessage("bar!");
   }
 
-  else if (msg.content.match(/lett/i)) {
-    msg.channel.sendMessage("vanskeli!");
+  else if (msg.content.match(/uwu/i)) {
+    msg.channel.sendMessage("OwO");
   }
 
   else if (msg.content.startsWith("ching")) {
@@ -85,15 +72,8 @@ Chaika.on("message", msg => {
     msg.channel.sendMessage("chong!");
   }
 
-  else if (msg.content.startsWith(msg.content.match("noah"))) {
-    msg.channel.sendMessage("Noah e stygg");
-
-  }
   else if (msg.content.startsWith("!" || len("!") > 4)) {
     msg.channel.sendMessage("https://a.cocaine.ninja/gdqran.png");
   }
 
-  else if (msg.content.match(/nightcore fags/i)) {
-    msg.channel.sendMessage("Alle som besøke nightcore-fags e søppel og hele gruppa burde brennes og bli resirkulert");
-  }
 })
