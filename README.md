@@ -8,8 +8,8 @@ Escape is futile.
 
  * Posts images/phrases based on message input.
  * Responds with simple sentence when mentioned.
- * Commands with links and phrases-
- 
+ * Commands with links and phrases.
+
 ## Planned features:
 
  * Image queries based around phrases/commands.
