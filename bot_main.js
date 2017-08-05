@@ -11,7 +11,7 @@
 var Discord = require("discord.js");
 var Futile = new Discord.Client();
 
-Futile.login("MzQzMDAxNDI2MzYxOTc0Nzg0.DGcsUw.5DO_7VCs_ynukmEWagEEgCzAnjs");
+Futile.login("xxx");
   //Client ID: xxx
   // Client ID link: https://discordapp.com/oauth2/authorize?&client_id=YYY&scope=bot
 
