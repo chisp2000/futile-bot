@@ -9,10 +9,11 @@ Escape is futile.
  * Posts images/phrases based on message input.
  * Responds with simple sentence when mentioned.
  * Commands with links and phrases.
+ * Image arays based around ducks.
 
 ## Planned features:
 
- * Image queries based around phrases/commands.
+ * Image queries based around MORE.
  * Simple AI.
  * Pulling images from NSFW/SFW websites.
  * Posting youtube results based on parameters.
