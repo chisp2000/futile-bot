@@ -1,0 +1,39 @@
+
+
+
+
+IMAGEQUERY::
+HELPDESK::
+
+// Roast
+ } else if (message.content.startsWith(prefix + "roast")) {
+   umath = Math.random()
+   if (umath > .05) {
+     var q = [ { text: message.mentions.users.first().send("your message"); }, ];
+     var q = q[Math.floor(Math.random() * q.length)]; // Booyah's Mod
+     message.channel.send(q.text);
+     console.log("Verbose: umath is equal-to " + umath)
+   } else { message.channel.send("Fish out of water!") // Ray's Mod
+     console.log("Verbose: umath is equal-to " + umath)} // 5 percent chance
+
+
+
+
+else if (message.content.startsWith(prefix + "duckquery")) {
+  var ducknum = Math.random()
+  if (ducknum > 0.9) {
+    msg.channel.send( {
+     files: [
+        "./ducks/ducks1.jpg"
+       ]})};
+  else if (ducknum > 0.8 && < 0.9) {
+    msg.channel.send( {
+    files: [
+      "./ducks/ducks2.jpg"
+      ]})};
+  else if (ducknum > 0.7 && < 0.8) {
+    msg.channel.send( {
+    files: [
+      "./ducks/ducks3.jpg"
+    ]})};
+}
