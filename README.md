@@ -1,6 +1,6 @@
 # Futile-Bot
 
-Bot based around Mark Zuckerberg and his ability to monitor your activity.
+Police bot knows what you do.
 
 Escape is futile.
 
