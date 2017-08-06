@@ -31,9 +31,9 @@ Futile.on("message", msg => {
        //duckquery
     } else if (msg.content.startsWith(prefix + "duckquery")) {
         var ducks = [
-        {file: "./img/ducks1.jpg"}, {file: "./img/ducks2.jpg"}, {file: "./img/ducks3.jpg"}, 
+        {file: "./img/ducks1.jpg"}, {file: "./img/ducks2.jpg"}, {file: "./img/ducks3.jpg"},
         {file: "./img/ducks4.jpg"}, {file: "./img/ducks5.jpg"}, {file: "./img/ducks6.jpg"}, 
-		{file: "./img/ducks7.jpg"}, {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"}, 
+		{file: "./img/ducks7.jpg"}, {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"},
 		{file: "./img/ducks10.jpg"}, {file: "./img/ducks11.jpg"}, {file: "./img/ducks12.jpg"}];
         var duck = ducks[Math.floor(Math.random()*ducks.length)]
         msg.channel.send(duck);
