@@ -11,7 +11,7 @@
 var Discord = require("discord.js");
 var Futile = new Discord.Client();
 
-Futile.login("MzQzMDAxNDI2MzYxOTc0Nzg0.DGekOQ.MmntHJmqS7E2CIJ7xkLuNps8JBQ");
+Futile.login("xxx");
   //Client ID: xxx
   // Client ID link: https://discordapp.com/oauth2/authorize?&client_id=YYY&scope=bot
 
@@ -33,8 +33,8 @@ Futile.on("message", msg => {
         var ducks = [
         {file: "./img/ducks1.jpg"}, {file: "./img/ducks2.jpg"}, {file: "./img/ducks3.jpg"},
         {file: "./img/ducks4.jpg"}, {file: "./img/ducks5.jpg"}, {file: "./img/ducks6.jpg"}, 
-		{file: "./img/ducks7.jpg"}, {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"},
-		{file: "./img/ducks10.jpg"}, {file: "./img/ducks11.jpg"}, {file: "./img/ducks12.jpg"}];
+	{file: "./img/ducks7.jpg"}, {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"},
+	{file: "./img/ducks10.jpg"}, {file: "./img/ducks11.jpg"}, {file: "./img/ducks12.jpg"}];
         var duck = ducks[Math.floor(Math.random()*ducks.length)]
         msg.channel.send(duck);
        //Nek
