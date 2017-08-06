@@ -53,7 +53,7 @@ Futile.on("message", msg => {
 //Ping-and-respond commands.
 Futile.on("message", msg => {
   if (msg.content.match(/uwu/i)) {
-    msg.channel.send("OwO");
+    msg.channel.send("owo");
     } else if (msg.content.startsWith("!" || len("!") > 4)) {
     msg.channel.send({file: "./img/exc.jpg"});
   }})
