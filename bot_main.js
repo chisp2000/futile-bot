@@ -11,7 +11,7 @@
 var Discord = require("discord.js");
 var Futile = new Discord.Client();
 
-Futile.login("xxx");
+Futile.login("MzQzMDAxNDI2MzYxOTc0Nzg0.DGekOQ.MmntHJmqS7E2CIJ7xkLuNps8JBQ");
   //Client ID: xxx
   // Client ID link: https://discordapp.com/oauth2/authorize?&client_id=YYY&scope=bot
 
@@ -19,86 +19,27 @@ Futile.on('ready', () => {
   console.log('Futile-bot is ready');
 });
 
-var prefix = "/!";
-Futile.on("message", msg => {
 //Prefix commands
+Futile.on("message", msg => {
+  let prefix = "/!";
   if(!msg.content.startsWith(prefix)) return;
   //event handler:
   if(msg.author.bot) return;
-        //you are listening to
+      //you are listening to
       else if (msg.content.startsWith(prefix + "auditor")) {
         msg.reply("I'm listening to your every move. http://youarelistening.to/newyork");
-        //duckquery
+       //duckquery
     } else if (msg.content.startsWith(prefix + "duckquery")) {
-        var ducknum = Math.random()
-        if (ducknum > 0.917) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks1.jpg"
-            ]})}
-        else if (ducknum > 0.834 && ducknum < 0.917) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks2.jpg"
-            ]})}
-        else if (ducknum > 0.751 && ducknum < 0.834) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks3.jpg"
-            ]})}
-        else if (ducknum > 0.668 && ducknum < 0.751) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks4.jpg"
-            ]})}
-        else if (ducknum > 0.585 && ducknum < 0.668) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks4.jpg"
-            ]})}
-        else if (ducknum > 0.502 && ducknum < 0.585) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks5.jpg"
-            ]})}
-        else if (ducknum > 0.419 && ducknum < 0.502) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks6.jpg"
-            ]})}
-        else if (ducknum > 0.336 && ducknum < 0.419) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks7.jpg"
-            ]})}
-        else if (ducknum > 0.253 && ducknum < 0.336) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks8.jpg"
-            ]})}
-        else if (ducknum > 0.170 && ducknum < 0.253) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks9.jpg"
-            ]})}
-        else if (ducknum > 0.087 && ducknum < 0.170) {
-          msg.channel.send( {
-              files: [
-              "./ducks/ducks10.jpg"
-            ]})}
-        else if (ducknum > 0.004 && ducknum < 0.087) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks11.jpg"
-            ]})}
-        else if (ducknum > 0.0 && ducknum < 0.004) {
-          msg.channel.send( {
-            files: [
-              "./ducks/ducks12.jpg"
-            ]})}
-    //Nek
+        var ducks = [
+        {file: "./img/ducks1.jpg"}, {file: "./img/ducks2.jpg"}, {file: "./img/ducks3.jpg"}, +
+        {file: "./img/ducks4.jpg"}, {file: "./img/ducks5.jpg"}, {file: "./img/ducks6.jpg"}, {file: "./img/ducks7.jpg"}, +
+        {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"}, {file: "./img/ducks10.jpg"}, {file: "./img/ducks11.jpg"}, +
+        {file: "./img/ducks12.jpg"}];
+        var duck = ducks[Math.floor(Math.random()*ducks.length)]
+        msg.channel.send(duck);
+       //Nek
     } else if (msg.content.startsWith(prefix + "nek")) {
-        msg.channel.sendMessage("https://en.wikipedia.org/wiki/Nek");
+        msg.channel.send("https://en.wikipedia.org/wiki/Nek");
     }
 });
 
@@ -112,9 +53,7 @@ Futile.on("message", msg => {
 //Ping-and-respond commands.
 Futile.on("message", msg => {
   if (msg.content.match(/uwu/i)) {
-    msg.channel.sendMessage("OwO");
+    msg.channel.send("owo");
     } else if (msg.content.startsWith("!" || len("!") > 4)) {
-    msg.channel.sendMessage("https://a.cocaine.ninja/gdqran.png");
-  }
-
-})
+    msg.channel.send({file: "./img/exc.jpg"});
+  }})
