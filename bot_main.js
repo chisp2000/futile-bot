@@ -32,18 +32,11 @@ Futile.on("message", msg => {
     } else if (msg.content.startsWith(prefix + "duckquery")) {
         var ducks = [
         {file: "./img/ducks1.jpg"}, {file: "./img/ducks2.jpg"}, {file: "./img/ducks3.jpg"},
-<<<<<<< HEAD
         {file: "./img/ducks4.jpg"}, {file: "./img/ducks5.jpg"}, {file: "./img/ducks6.jpg"},
 		    {file: "./img/ducks7.jpg"}, {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"},
 		    {file: "./img/ducks10.jpg"}, {file: "./img/ducks11.jpg"}, {file: "./img/ducks12.jpg"}];
 
         var duck = ducks[Math.floor(Math.random()*ducks.length)];
-=======
-        {file: "./img/ducks4.jpg"}, {file: "./img/ducks5.jpg"}, {file: "./img/ducks6.jpg"},
-	{file: "./img/ducks7.jpg"}, {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"},
-	{file: "./img/ducks10.jpg"}, {file: "./img/ducks11.jpg"}, {file: "./img/ducks12.jpg"}];
-        var duck = ducks[Math.floor(Math.random()*ducks.length)]
->>>>>>> 1cbf87b45e473465b682a06b4ee4fb58e21f9083
         msg.channel.send(duck);
        //Nek
     } else if (msg.content.startsWith(prefix + "nek")) {
