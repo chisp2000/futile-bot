@@ -17,7 +17,7 @@ Futile.on("message", msg => {
   //event handler:
   if(msg.author.bot) return;
       //you are listening to
-      else if (msg.content.startsWith(prefix + "auditor")) {
+      else if (msg.content.startsWith(prefix + "audit")) {
         msg.reply("I'm listening to your every move. http://youarelistening.to/newyork");
        //duckquery
     } else if (msg.content.startsWith(prefix + "duckquery")) {
