@@ -1,12 +1,3 @@
-//          (
-//          )\ )          )     (           (           )
-//         (()/(   (   ( /( (   )\   (    ( )\       ( /(
-//       (_)) ))\  )\()))\ ((_) ))\   )((_)  (   )\())
-//       (_))_|/((_)(_))/((_) _  /((_) ((_)_   )\ (_))/
-//       | |_ (_))( | |_  (_)| |(_))    | _ ) ((_)| |_
-//       | __|| || ||  _| | || |/ -_)   | _ \/ _ \|  _|
-//       |_|   \_,_| \__| |_||_|\___|   |___/\___/ \__|
-
 
 var Discord = require("discord.js");
 var Futile = new Discord.Client();
@@ -26,16 +17,17 @@ Futile.on("message", msg => {
   //event handler:
   if(msg.author.bot) return;
       //you are listening to
-      else if (msg.content.startsWith(prefix + "auditor")) {
+      else if (msg.content.startsWith(prefix + "audit")) {
         msg.reply("I'm listening to your every move. http://youarelistening.to/newyork");
        //duckquery
     } else if (msg.content.startsWith(prefix + "duckquery")) {
         var ducks = [
         {file: "./img/ducks1.jpg"}, {file: "./img/ducks2.jpg"}, {file: "./img/ducks3.jpg"},
-        {file: "./img/ducks4.jpg"}, {file: "./img/ducks5.jpg"}, {file: "./img/ducks6.jpg"}, 
-	{file: "./img/ducks7.jpg"}, {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"},
-	{file: "./img/ducks10.jpg"}, {file: "./img/ducks11.jpg"}, {file: "./img/ducks12.jpg"}];
-        var duck = ducks[Math.floor(Math.random()*ducks.length)]
+        {file: "./img/ducks4.jpg"}, {file: "./img/ducks5.jpg"}, {file: "./img/ducks6.jpg"},
+		    {file: "./img/ducks7.jpg"}, {file: "./img/ducks8.jpg"}, {file: "./img/ducks9.jpg"},
+		    {file: "./img/ducks10.jpg"}, {file: "./img/ducks11.jpg"}, {file: "./img/ducks12.jpg"}];
+
+        var duck = ducks[Math.floor(Math.random()*ducks.length)];
         msg.channel.send(duck);
        //Nek
     } else if (msg.content.startsWith(prefix + "nek")) {
@@ -46,7 +38,7 @@ Futile.on("message", msg => {
 //AI Commands.
 Futile.on("message", msg => {
   if (msg.isMentioned(Futile.user)) {
-    msg.reply("Hi, I am Futile bot.")
+    msg.reply("Hi, I am Futile bot.");
   }
 })
 
