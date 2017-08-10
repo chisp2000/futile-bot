@@ -10,6 +10,16 @@ Futile.on('ready', () => {
   console.log('Futile-bot is ready');
 });
 
+
+var search = require("youtube-search");
+var options = {
+  maxResults: 10,
+  key: "yourkey"
+}; search(msg.content, opts, function(err, results) {
+      if(err) return console.log(err);
+      console.dir(results);
+});
+
 //Prefix commands
 Futile.on("message", msg => {
   let prefix = "/!";
@@ -30,6 +40,8 @@ Futile.on("message", msg => {
         var duck = ducks[Math.floor(Math.random()*ducks.length)];
         msg.channel.send(duck);
        //Nek
+    } else if (msg.content.startsWith(prefix + "youtube")) {
+
     } else if (msg.content.startsWith(prefix + "nek")) {
         msg.channel.send("https://en.wikipedia.org/wiki/Nek");
     }
@@ -48,4 +60,4 @@ Futile.on("message", msg => {
     msg.channel.send("OwO");
     } else if (msg.content.startsWith("!" || len("!") > 4)) {
     msg.channel.send({file: "./img/exc.jpg"});
-  }})
+}})
