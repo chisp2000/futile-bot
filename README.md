@@ -15,9 +15,9 @@ Escape is futile.
 
 ## Planned features:
 
- * Image queries based around MORE.
+ * Image queries based around more.
  * Simple AI.
- * Pulling images from NSFW/SFW websites.
+ * Pulling images from websites.
  * Posting youtube results based on parameters.
 
 
