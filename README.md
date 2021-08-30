@@ -11,7 +11,7 @@ Escape is futile.
  * Posts images/phrases based on message input.
  * Responds with simple sentence when mentioned.
  * Commands with links and phrases.
- * Image arrays based around ducks.
+ * Image arrays.
 
 ## Planned features:
 
